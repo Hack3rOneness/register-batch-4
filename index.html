@@ -69,15 +69,15 @@
                     <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="/assets/img/bg-masthead11.jpg" alt="..." /></div>
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
-                            <h4>Shoreline</h4>
-                            <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
+                            <h4>Mission Crime Free Bharat</h4>
+                            <p class="text-black-50 mb-0">Mission Crime Free Bharat is a registered organisation under MHA having Mission Code: MM:06 SINCE 1990. CFB has taken this pledge to make India crime free under the behalf of NCRB, BPR&D, MHA, GOI</p>
                         </div>
                     </div>
                 </div>
                 <!-- Project One Row-->
                 <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="/assets/img/demo-image-01.jpg" alt="..." /></div>
-                    <div class="col-lg-6">
+                   <marquee><h4 style="color:red;">The Registrations for internship batch - 4 is begin now</h4></marquee>
+                   <!--  <div class="col-lg-6">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-left">
@@ -87,7 +87,104 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
+                   <iframe
+      id="JotFormIFrame-212045342017442"
+      title="Internship Registration Form"
+      onload="window.parent.scrollTo(0,0)"
+      allowtransparency="true"
+      allowfullscreen="true"
+      allow="geolocation; microphone; camera"
+      src="https://form.jotform.com/cyberworldorganization/internship-registration-form"
+      frameborder="0"
+      style="
+      min-width: 100%;
+      height:539px;
+      border:none;"
+      scrolling="no"
+    >
+    </iframe>
+    <script type="text/javascript">
+      var ifr = document.getElementById("JotFormIFrame-212045342017442");
+      if (ifr) {
+        var src = ifr.src;
+        var iframeParams = [];
+        if (window.location.href && window.location.href.indexOf("?") > -1) {
+          iframeParams = iframeParams.concat(window.location.href.substr(window.location.href.indexOf("?") + 1).split('&'));
+        }
+        if (src && src.indexOf("?") > -1) {
+          iframeParams = iframeParams.concat(src.substr(src.indexOf("?") + 1).split("&"));
+          src = src.substr(0, src.indexOf("?"))
+        }
+        iframeParams.push("isIframeEmbed=1");
+        ifr.src = src + "?" + iframeParams.join('&');
+      }
+      window.handleIFrameMessage = function(e) {
+        if (typeof e.data === 'object') { return; }
+        var args = e.data.split(":");
+        if (args.length > 2) { iframe = document.getElementById("JotFormIFrame-" + args[(args.length - 1)]); } else { iframe = document.getElementById("JotFormIFrame"); }
+        if (!iframe) { return; }
+        switch (args[0]) {
+          case "scrollIntoView":
+            iframe.scrollIntoView();
+            break;
+          case "setHeight":
+            iframe.style.height = args[1] + "px";
+            break;
+          case "collapseErrorPage":
+            if (iframe.clientHeight > window.innerHeight) {
+              iframe.style.height = window.innerHeight + "px";
+            }
+            break;
+          case "reloadPage":
+            window.location.reload();
+            break;
+          case "loadScript":
+            if( !window.isPermitted(e.origin, ['jotform.com', 'jotform.pro']) ) { break; }
+            var src = args[1];
+            if (args.length > 3) {
+                src = args[1] + ':' + args[2];
+            }
+            var script = document.createElement('script');
+            script.src = src;
+            script.type = 'text/javascript';
+            document.body.appendChild(script);
+            break;
+          case "exitFullscreen":
+            if      (window.document.exitFullscreen)        window.document.exitFullscreen();
+            else if (window.document.mozCancelFullScreen)   window.document.mozCancelFullScreen();
+            else if (window.document.mozCancelFullscreen)   window.document.mozCancelFullScreen();
+            else if (window.document.webkitExitFullscreen)  window.document.webkitExitFullscreen();
+            else if (window.document.msExitFullscreen)      window.document.msExitFullscreen();
+            break;
+        }
+        var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false;
+        if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) {
+          var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)};
+          iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*");
+        }
+      };
+      window.isPermitted = function(originUrl, whitelisted_domains) {
+        var url = document.createElement('a');
+        url.href = originUrl;
+        var hostname = url.hostname;
+        var result = false;
+        if( typeof hostname !== 'undefined' ) {
+          whitelisted_domains.forEach(function(element) {
+              if( hostname.slice((-1 * element.length - 1)) === '.'.concat(element) ||  hostname === element ) {
+                  result = true;
+              }
+          });
+          return result;
+        }
+      }
+      if (window.addEventListener) {
+        window.addEventListener("message", handleIFrameMessage, false);
+      } else if (window.attachEvent) {
+        window.attachEvent("onmessage", handleIFrameMessage);
+      }
+      </script>
+                    
                 </div>
                 <!-- Project Two Row-->
                 <div class="row gx-0 justify-content-center">
@@ -96,8 +193,8 @@
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-right">
-                                    <h4 class="text-white">Mountains</h4>
-                                    <p class="mb-0 text-white-50">Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!</p>
+                                    <h4 class="text-white">CFB YouTube</h4>
+                                    <p class="mb-0 text-white-50">Let's take a pledge to make this india Crime Free!</p>
                                     <hr class="d-none d-lg-block mb-0 me-0" />
                                 </div>
                             </div>
